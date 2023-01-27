@@ -1,0 +1,63 @@
+/* text background animation   */
+/* background: linear-gradient(90deg, #0085ff 50%, #faff00 100%); */
+
+.hero__title {
+    background-image: url(../images/hero/text-bg.png);
+    background-repeat: repeat;
+    background-position: left 140% top;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: hero-title-anim 8s ease-in-out 1s infinite;
+}
+
+@keyframes hero-title-anim {
+    0% {
+        background-position: left 140% top;
+    }
+    40% {
+        background-position: left -30% top;
+    }
+    100% {
+        background-position: left -30% top;
+    }
+}
+
+.header {
+    animation: header-anim 1s ease-in-out 0.5s;
+}
+@keyframes header-anim {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.hero__title,
+.hero__btn-game,
+.hero__btn-info,
+.hero__img-wrapper,
+.hero-monitoring__title,
+.hero-monitoring__desc,
+.hero-monitoring__item-1,
+.hero-monitoring__item-2,
+.hero__img-wrapper,
+.hero__content,
+.why__title,
+.why__images,
+.why__info,
+.download__title,
+.download__item,
+.download__btn,
+.download__link,
+.download__text-decor,
+.newsgame__title,
+.screenshotgame__title,
+.screenshotgame__item-img {
+    will-change: transform;
+}

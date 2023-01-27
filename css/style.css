@@ -8,6 +8,15 @@
 :root {
     --color-bg: #0085ff;
 }
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f57444;
+    border-radius: 3px;
+}
 
 a {
     display: flex;
